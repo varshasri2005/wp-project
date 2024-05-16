@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Social Media Icons</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<style>
+@charset "utf-8";
+
+/* ENTYPO font import */
+@import url(http://weloveiconfonts.com/api/?family=entypo);
+
+a[class*="entypo-"]:before {
+    font-family: 'entypo', sans-serif;
+}
+
+body {
+    background: #fffdf0;
+    font: 100%/1.5em sans-serif;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    height: 3em;
+    left: 50%;
+    margin: -1.5em 0 0 -6em;
+    position: absolute;
+    top: 50%;
+    width: 12em;
+}
+
+.social {
+    position: relative;
+    height: 3em;
+    width: 13.5em;
+}
+
+.social li {
+    display: block;
+    height: 4em;
+    line-height: 4em;
+    margin: -2.2em;
+    position: absolute;
+    transition: transform .7s;
+    transform: rotate(45deg);
+    text-align: center;
+    width: 4em;
+}
+
+.social a {
+    color: #fffdf0;
+    display: block;
+    height: 4em;
+    line-height: 4em;
+    text-align: center;
+    transform: rotate(-45deg);
+    width: 4em;
+}
+
+.social li:hover {
+    transform: scale(1.3,1.3) rotate(45deg);
+}
+
+.facebook {
+    background: #155b9d;
+    left: 0;
+    top: 0%;
+}
+
+.twitter {
+    background: #1a9ec4;
+    bottom: 0;
+    left: 25%;
+}
+
+.dribbble {
+    background: #d05f8f;
+    left: 50%;
+    top: 0%;
+}
+
+.behance {
+    background: #3f7aa3;
+    bottom: 0;
+    left: 75%;
+}
+
+.linked-in {
+    background: #157f9d;
+    left: 100%;
+    top: 0%;
+}
+</style>
+<body>
+    <div class="container">
+        <ul class="social">
+            <li class="facebook"><a href="#"><span class="entypo-facebook"></span></a></li>
+            <li class="twitter"><a href="#"><span class="entypo-twitter"></span></a></li>
+            <li class="dribbble"><a href="#"><span class="entypo-dribbble"></span></a></li>
+            <li class="behance"><a href="#"><span class="entypo-behance"></span></a></li>
+            <li class="linked-in"><a href="#"><span class="entypo-linkedin"></span></a></li>
+        </ul>
+    </div>
+
+    <!-- Your custom JavaScript file -->
+    <script src="script.js"></script>
+</body>
+</html>
